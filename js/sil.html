@@ -1,0 +1,46 @@
+﻿
+<html>
+<body>
+
+    <input type="text" id="sayi1" placeholder="1. sayÄ±nÄ±z"/ ><br />
+    <input type="text" id="sayi2" placeholder="2. sayÄ±nÄ±z" />
+    <br />
+    <div id="sonuc"></div>
+    <br />
+    <input type="button" onclick="topla()" value="Topla" />
+    <input type="button" onclick="cikart()" value="Ã‡Ä±kart" />
+    <input type="button" onclick="carp()" value="Ã‡arp" />
+    <input type="button" onclick="bol()" value="BÃ¶l" />
+    <script>
+
+function topla()
+{
+
+let a= Number(document.getElementById("sayi1").value);
+let b= Number(document.getElementById("sayi2").value);
+document.getElementById("sonuc").innerHTML= a + b;
+
+}
+function cikart() {
+
+    let a = Number(document.getElementById("sayi1").value);
+    let b = Number(document.getElementById("sayi2").value);
+    document.getElementById("sonuc").innerHTML = a - b;
+
+} function carp() {
+
+    let a = Number(document.getElementById("sayi1").value);
+    let b = Number(document.getElementById("sayi2").value);
+    document.getElementById("sonuc").innerHTML = a * b;
+
+} function bol() {
+
+    let a = Number(document.getElementById("sayi1").value);
+    let b = Number(document.getElementById("sayi2").value);
+    document.getElementById("sonuc").innerHTML = a/ b;
+
+}
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+﻿document.write("Ben buradayım");

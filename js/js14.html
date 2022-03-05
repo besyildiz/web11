@@ -1,0 +1,27 @@
+﻿<!doctype html>
+<html>
+ 
+
+<body>
+    <input type="number" id="txtSayi" placeholder="Sayı Giriniz.">
+    <button id="btn">Kontrol Et</button>
+
+    <script>
+
+        var btnHesap=document.getElementById("btn");
+
+        btnHesap.onclick=function(){
+            var sayi=Number(document.getElementById("txtSayi").value);
+
+            if(sayi%2==0){
+                alert(sayi+" Sayısı Çifttir.");
+            }
+            else{
+                alert(sayi+" Sayısı Tektir.");
+            }
+
+        }
+
+    </script>
+</body>
+</html>

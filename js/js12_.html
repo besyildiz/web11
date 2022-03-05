@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+
+<body>
+     
+
+    <input type="text" id="sayi1" placeholder="1. sayınız" /><br />
+    <input type="text" id="sayi2" placeholder="2. sayınız" />
+    <br />
+    <div id="sonuc" ></div>
+    <br />
+    <input type="button"  onclick="topla()" value="Topla" />
+ 
+
+    <script>
+        function topla()
+        {
+            let a = Number(document.getElementById("sayi1").value);
+            let b = Number(document.getElementById("sayi2").value);
+            document.getElementById("sonuc").innerHTML = a + b;
+        }
+
+
+    </script>
+
+</body>
+</html>

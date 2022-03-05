@@ -1,0 +1,22 @@
+﻿<!doctype html>
+<html>
+ 
+
+<body>
+    <input type="text" id="txt1">
+    <button id="btn">Listeye Ekle</button>
+    <ol id="liste"></ol>
+
+    <script>
+
+        var btnEkle=document.getElementById("btn");
+        var lst=document.getElementById("liste");
+        btnEkle.onclick=function(){
+            var eleman=document.getElementById("txt1").value;
+            lst.innerHTML+="<li>"+eleman+"</li>";
+        }
+
+    </script>
+
+</body>
+</html>

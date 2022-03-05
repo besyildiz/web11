@@ -1,0 +1,19 @@
+﻿<html>
+ 
+<body>
+
+    <input type="text" id="not1" placeholder="1. Not"><br>
+    <input type="text" id="not2" placeholder="2. Not"><br>
+    <div id="sonuc"></div>
+    <input type="button" onclick="notHesapla()" value="Not Hesapla"><br>
+    <script>
+
+        function notHesapla(){
+            not1 =Number( document.querySelector("#not1").value )
+            not2 =Number( document.querySelector("#not2").value )
+            document.querySelector("#sonuc").innerText = (not1 + not2) / 2
+        }
+
+    </script>
+</body>
+</html>

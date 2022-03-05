@@ -1,0 +1,26 @@
+﻿<!doctype html>
+<html>
+ 
+<body>
+    <input type="number" id="txtKenar" placeholder="Kenar uzunluğunu girin.">
+    <button id="btn">HESAPLA</button>
+    <div id="sonuc"></div>
+    <script>
+        var btnHesapla=document.getElementById("btn");
+
+        btnHesapla.onclick = function () {
+
+            var kenar1 = Number(document.getElementById("txtKenar").value);
+
+            let alan=kenar1*kenar1;
+            let cevre = 4 * kenar1;
+
+            document.getElementById('sonuc').innerHTML='Alan=' + alan + "<br/>Çevre= " + cevre;
+
+
+          
+        }
+    </script>
+ 
+</body>
+</html>
