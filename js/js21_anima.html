@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Animate Frame</title>
+
+
+</head>
+
+<body>
+
+    <style>
+        div {
+            width: 20px;
+            height: 20px;
+            float: left;
+        }
+
+        button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        #stop {
+            left: 100px;
+        }
+    </style>
+
+    <script>
+
+
+var animateFrameId;
+function oynat() {
+
+var element= document.createElement("div");
+document.body.appendChild(element);
+var renk1= Math.floor(255*Math.random());
+var renk2= Math.floor(255*Math.random());
+var renk3= Math.floor(255*Math.random());
+element.style.backgroundColor="rgb("+renk1+","+renk2+","+renk3+")";
+
+
+animateFrameId = requestAnimationFrame(oynat);
+
+}
+animateFrameId = requestAnimationFrame(oynat);
+
+    </script>
+
+</body>
+</html>

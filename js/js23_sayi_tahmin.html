@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+
+    <script>
+ 
+        var bsayi = Math.round(Math.random() * 100);
+        document.write(bsayi);
+        var tahmin = 0;
+
+        while (true) {
+            var sayi = window.prompt("Bir sayı girin:", "");
+            sayi = Number(sayi);
+            tahmin++;
+
+            if (bsayi == sayi) {
+                window.alert("tebrikler" + " Tahmin Sayısı:" + tahmin);
+                break;
+            } else if (bsayi > sayi) {
+                window.alert("Yukarı çık");
+            } else {
+                window.alert("Aşağı in");
+            }
+        }
+
+
+    </script>
+</body>
+</html>

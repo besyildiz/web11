@@ -1,10 +1,56 @@
-﻿<!DOCTYPE html>
+﻿
+<!doctype html>
 <html>
 <head>
-    <title></title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8">
+    <title>11 BİLİŞİM</title>
+
+    <style>
+        .konum {
+            width: 250px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 2em;
+            background: #64DDBB;
+            color: #D33257;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        #kutu {
+            /* ÖNEMLİ NOT: HAREKET ETTİRİLECEK NESNENİN POZİSYON DEĞERİ ABSOLUTE OLMAK ZORUNDA!!!*/
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #FF7416;
+        }
+    </style>
 </head>
 <body>
+    <div id="x" class="konum">X</div>
+    <div id="y" class="konum">Y</div>
+    <div id="kutu"></div>
 
 </body>
+<script>
+//window (taraycı penceresi) üzerinde fare hareket ettirildikçe çalışacak kodlar
+window.onmousemove=function(olay)
+{
+//gerçekleşen olayla ilgili tüm bilgi olay değişkenine aktarılıyor.
+
+var xpos=document.getElementById('x');
+var ypos=document.getElementById('y');
+var kutu=document.getElementById('kutu');
+
+//clientX: farenin x eksenindeki konumu
+//clientY farenin y eksenindeki konumu
+xpos.innerHTML=olay.clientX;
+ypos.innerHTML=olay.clientY;
+
+//ÖNEMLİ NOT: HAREKET ETTİRİLECEK NESNENİN POZİSYON DEĞERİ ABSOLUTE OLMAK ZORUNDA!!!
+kutu.style.left=olay.clientX+"px";
+kutu.style.top=olay.clientY+"px";
+
+}
+</script>
 </html>
