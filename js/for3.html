@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <script>// JavaScript Document
+        var yukseklik = window.prompt("Yüksekliği Girin");
+        var genislik = window.prompt("Genişliği Girin");
+        for (var i = 1; i <= yukseklik; i++) {
+            for (var j = 1; j <= genislik; j++) {
+                if (i == 1 || i == yukseklik)
+                    document.write("*");
+                else
+                    if (j == 1 || j == genislik)
+                        document.write("*");
+                    else {
+                        document.write("&nbsp;");
+                        document.write("&nbsp;");
+                    }
+
+            }
+            document.write("<br>");
+        }
+ </script>
+</body>
+</html>

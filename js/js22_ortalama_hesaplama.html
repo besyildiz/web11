@@ -31,9 +31,12 @@ window.onload=function(e){
 
 var y1=document.getElementById("y1");
 var y2=document.getElementById("y2");
-var y3=document.getElementById("y3");
-var sonuc=document.getElementById("sonuc");
-var hesapla=document.getElementById("hesapla");
+var y3 = document.getElementById("y3");
+
+var sonuc = document.getElementById("sonuc");
+
+var hesapla = document.getElementById("hesapla");
+
 var sonucYaz=document.getElementById("sonuc-yaz");
 
 /*0-100 arasında değilse uyarı ver*/
@@ -53,8 +56,11 @@ this.focus();
 hesapla.onclick=function(){
 
 var s=(Number(y1.value)+Number(y2.value)+Number(y3.value))/3;
-sonuc.value=s.toFixed(2);
-if(s<50)
+
+
+document.getElementById("sonuc2").innerHTML = s.toFixed(2);
+
+if (s < 50)
 {
 sonucYaz.textContent="BAŞARISIZ OLDUNUZ";
 }
@@ -72,8 +78,9 @@ sonucYaz.textContent="GEÇTİNİZ";
     <div class="panel">
         <input type="text" id="y1" placeholder="1.yazılı">
         <input type="text" id="y2" placeholder="2.yazılı">
-        <input type="text" id="y3" placeholder="3.yazılı">
-        <input type="text" id="sonuc">
+        <input type="text" id="y3" placeholder="3.yazılı">  
+   
+       <div id="sonuc2"></div>
         <input type="button" id="hesapla" value="hesapla">
         <div id="sonuc-yaz"></div>
     </div>

@@ -1,7 +1,6 @@
 ﻿<html>
  
-<body>
-
+<body> 
     <input type="text" id="sayi1" placeholder="Sayı 1"><br>
     <input type="text" id="sayi2" placeholder="Sayı 2"><br>
     <div id="sonuc"></div>
@@ -13,16 +12,13 @@
         function topla(){
            sonuc.innerText = "Toplam:" + Number(sayi1.value) + Number(sayi2.value)
         }
-
-        function cikar(){
+      function cikar(){
            sonuc.innerText = "Çıkarma:" +Number(sayi1.value) - Number(sayi2.value)
         }
-
         function carp(){
            sonuc.innerText = "Çarpma:" +Number(sayi1.value) * Number(sayi2.value)
         }
-
-        function bol(){
+       function bol(){
            sonuc.innerText = "Bölme:" +Number(sayi1.value) / Number(sayi2.value)
         }
     </script>

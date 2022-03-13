@@ -2,28 +2,25 @@
  
 <body>
 
-    <input type="text" id="kisakenar" placeholder="Kısa Kenar"><br>
-    <input type="text" id="uzunkenar" placeholder="Uzun Kenar"><br>
-    <div id="sonuc"></div>
-    <input type="button" onclick="hesapla()" value="Hesapla"><br>
-   
-
-    <script>
-        function hesapla()
-        {
-            let a=Number(document.getElementById("kisakenar").value);
-            let b = Number(document.getElementById("uzunkenar").value);
-
-            let alan = a * b;
-            let cevre = a + a + b + b;
+ <input type="text" id="kisakenar" placeholder="Kısa Kenar"><br>
+ <input type="text" id="uzunkenar" placeholder="Uzun Kenar"><br>
+ <div id="sonuc"></div>
+ <input type="button" onclick="hesapla()" value="Hesapla"><br>
 
 
-            document.getElementById("sonuc").innerHTML = "Çevre=" + cevre + " Alan=" + alan;
-        }
+ <script>
+  function hesapla()
+  {
+let a=Number(document.getElementById("kisakenar").value);
+let b = Number(document.getElementById("uzunkenar").value);
 
-
-
-    </script>
+let alan = a * b;
+let cevre = a + a + b + b;
+ 
+document.getElementById("sonuc").innerHTML = "Çevre=" + cevre + " Alan=" + alan;
+  }
+      
+ </script>
 
 
 </body>

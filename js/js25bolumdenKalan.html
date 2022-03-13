@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+  Sayınızı giriniz:  <input type="text" id="bolum" >
+    <input type="button" id="İslem" onclick="hesapla()" value="Hesapla" />
+    <div id="sonuc"></div>
+
+    <script>
+        function hesapla()
+        {
+            let sayi =Number( document.getElementById("bolum").value);
+          document.getElementById("sonuc").innerHTML =sayi+" sayısının 5 ile bölümünden kalan "+ sayi % 5;
+
+ }
+    </script>
+
+</body>
+</html>
